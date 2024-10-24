@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    
+    <img src="https://upload.wikimedia.org/wikipedia/en/a/ac/Gravity_Falls_-_Stan_Pines.png" alt="">
+    <p></p>
+
+    <script>
+
+        let img = document.querySelector("img");
+        let texto = document.querySelector("p");
+
+
+
+        img.addEventListener('click',()=>{
+            texto.innerText = "Oque você quer?, deseja comprar algo?"
+        })
+        img.addEventListener('mouseenter',()=>{
+            texto.innerText = "Olá ,bem vindos a Cabana do Mistério"
+        })
+        img.addEventListener('mouseleave',()=>{
+            texto.innerText = "Já vai indo? temos um novo estoque chegando agora"
+        })
+        img.addEventListener('mousemove',()=>{
+            texto.innerText = "Olá ,bem vindos a Cabana do Mistério"
+        })
+
+
+
+    </script>
+
+</body>
+</html>

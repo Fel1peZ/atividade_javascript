@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de nomes de aventura</title>
+</head>
+<body>
+    <h1>Gerador de nomes de aventura</h1>
+
+    <button>Gerar Nome </button>
+    <p>Gere um Nome</p>
+
+
+    <script>
+        let botao = document.querySelector("button");
+        let texto = document.querySelector("p");
+
+        const titles = ["Sr.", "Rainha", "Empírio", "Lorde Prístino", "Maculado", "Capitão", "Semideus"];
+        const names = ["Miquella", "Godwyn", "Godfrey", "Malenia", "Radhan", "Marika", "Morgott"];
+        const classes = ["Mago", "Paladino", "Arqueiro", "Ladino", "Bárbaro", "Feiticeiro", "Cavaleiro"];
+        const locations = ["Caelid", "Leyndell", "Liurnia", "Limgrave", "Farum Azula", "Mogwhyn", "Terra das Sombras"];
+        
+        botao.addEventListener('click',()=>{
+            const titulo = titles[Math.floor(Math.random() * titles.length)];
+            const nomes = names[Math.floor(Math.random() * names.length)];
+            const classe = classes[Math.floor(Math.random() * classes.length)];
+            const local = locations[Math.floor(Math.random() * locations.length)];
+            
+            texto.innerText = titulo +" "+nomes+" "+classe+" de "+local;
+        
+        })
+
+
+    </script>
+</body>
+</html>
